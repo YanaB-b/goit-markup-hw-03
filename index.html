@@ -10,12 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styless.css" />
   </head>
   <body>
     <header class="header">
-      <nav>
+      <nav class="conteiner conteiner-header">
         <a class="header-logo link" href="./index.html">
           Web<span class="header-logo-color link">Studio</span>
         </a>
@@ -27,21 +28,26 @@
           <li class="header-item"><a class="header-link link" href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="list">
-        <li class="header-list">
-          <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="header-list">
-          <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <div class="conteiner container-section">
+        <ul class="list">
+          <li class="header-list">
+            <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="header-list">
+            <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+      
     </header>
     <main>
-      <section class="subject">
-        <h1 class="subject-text">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn subject-btn" type="button">Замовити послугу</button>
-      </section>
-
+      <div>
+        <section class="subject">
+          <h1 class="subject-text">Ефективні рішення для вашого бізнесу</h1>
+          <button class="btn subject-btn" type="button">Замовити послугу</button>
+        </section>
+      </div>
+      
       <section>
         <h2 class="visually-hidden">Переваги</h2>
         <ul class="list">

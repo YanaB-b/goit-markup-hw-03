@@ -23,6 +23,45 @@ body{
     background-color: var(--background-color);
     font-size: 14px;
     letter-spacing: 0.03em;
+    margin: 0;
+    width: 1200px;
+   
+}
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+*,
+*::before
+*::after{
+    box-sizing: inherit;
+   
+
+}
+.conteiner{
+
+    outline: 5px, solid tomato;
+    display: inline-block;
+    
+
+}
+.conteiner-header{
+    width: 1200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #757575;
+}
+
+.conteiner-section{
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
 
 }
 .header-logo{
@@ -49,6 +88,7 @@ l   etter-spacing: 0.03em;
 .header-list :focus{
      color: var(--acent-color);
      cursor: pointer;
+    
 }
 .current{
     color: var(--acent-color);
@@ -109,7 +149,7 @@ font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
 color: var(--secondary-text-color);
-
+text-transform: uppercase;
 }
 .btn :hover,
 .btn :focus{
@@ -126,7 +166,7 @@ letter-spacing: 0.06em;
 color: var(--secondary-text-color);
 background-color: var(--acent-color); 
 cursor: pointer;
-text-transform: uppercase;
+
 
 }
 
@@ -204,12 +244,21 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color:  var(--secondary-text-color);
 }
 
                                   /* portfolio */
  
- .content-btn-item {
+ 
+.content-btn-item:hover,
+ .content-btn-item:focus{
+  background-color: var(--acent-color);
+   color: var(--background-color);
+   cursor: pointer;
+  }
+
+
+  .content-btn-item {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -218,14 +267,11 @@ color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
     color: #212121;
     border-radius: 4px;
+    background-color: var(--buttons-port-color);
     
 }
 
-.content :hover,
-.content :focus{
-    color: var(--acent-color);
-    cursor: pointer;
-}
+
 .icon {
     list-style: none;
     text-decoration: none;
