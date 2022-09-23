@@ -65,10 +65,10 @@ html{
 
 }
 .header-logo{
-    padding-top: 19px;
-    padding-bottom: 30px;
-    padding-right: 93px;
-    padding-left: 0;
+    margin-top: 19px;
+    margin-bottom: 30px;
+    margin-right: 93px;
+    margin-left: 0;
 
     font-family: 'Raleway';
    font-style: normal;
@@ -89,12 +89,13 @@ l   letter-spacing: 0.03em;
 
    }
    .header-item{
-    padding-right: 50px;
-    padding-top: 27px;
-    padding-bottom: 37px;
+   
+    margin-right: 50px;
+    margin-top: 27px;
+    margin-bottom: 37px;
    }
-   .header-contakt{
-    padding-right: 0;
+   .header-item:last-child{
+    margin-right: 0;
    }
 
 .header-list :hover,
@@ -107,8 +108,9 @@ l   letter-spacing: 0.03em;
     color: var(--acent-color);
 }
 .header-list{
-    margin-top: 0px;
-    margin-bottom: 0px;
+   
+    margin-top: 27px;
+    margin-bottom: 37px;
     
 }
 .header-link{
@@ -125,10 +127,9 @@ color: var(--main-text-color);
 }
 
 .header-mail{
-    padding-top: 27px;
-    padding-bottom: 37px;
-    padding-left: 344px;
-    padding-right: 50px;
+    
+    margin-left: 344px;
+    margin-right: 50px;
 
 font-weight: 500;
 font-size: 14px;
@@ -138,8 +139,7 @@ color: var(--ouwer-text-color);
 
 }
 .header-tel{
-    padding-top: 27px;
-    padding-bottom: 37px;
+    
     padding-left: 0;
     padding-right: 0;
 
@@ -210,6 +210,7 @@ height: 600px;
 .subject-btn{
    
     display: flex;
+    flex-direction: column;
     border-radius: 4px;
     position: absolute;
     padding: 10px 32px; 
@@ -433,10 +434,14 @@ color:  var(--secondary-text-color);
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-
+    padding-bottom: 94px;
+    
 }
+   
+
+
 .icon{
-    width: calc((100%-60) /3);
+    width: calc((100%-60px) /3);
 }
 .content{
     gap: 8px;
@@ -469,11 +474,26 @@ color:  var(--secondary-text-color);
 
 
 .icon {
+    display: inline-block;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+   
+width: 370px;
+height: 404px;
+
 }
 
+
+.project-icon{
+    padding: 20px 24px;
+}
 .icon-text{
+margin-top: 0;
+margin-bottom: 0;
+padding-bottom: 4px;
+
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -481,6 +501,8 @@ letter-spacing: 0.06em;
 color: var(--main-text-color);
 }
 .icon-text-list{
+    margin-top: 0;
+    margin-bottom: 0;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
