@@ -281,6 +281,7 @@ color: var(--ouwer-text-color);
     display: flex;
     gap: 30px;
     padding-bottom: 94px;
+    width: calc( ( 100% - 60px ) / 3 );
 }
 
 .teem-desk{
@@ -349,20 +350,18 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
                                                 /* FOOTER */
 .footer{
     background-color:  var(--background-footer-color);
-    width: 1600px;
-    height: 252px;
-
+   
 }
 .footer-conteiner{
-    background-color:  var(--background-footer-color);
+    height: 252px;
     
     
 }
 .conteiner-logo{
     display: inline-block;
     padding-top: 60px;
-    margin-bottom: 20px;
-   
+    padding-bottom: 20px;
+   margin: 0px 0px;
     
 }
 .footer-logo-color{
@@ -375,6 +374,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 color:var(--secondary-text-color) ;
 
 }
+
 
 .footer-link-tel,
 .footer-link-mail{
@@ -423,8 +423,35 @@ color:  var(--secondary-text-color);
    cursor: pointer;
   }
 
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 50px;
+
+}
+.portfolio-img{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.icon{
+    width: calc((100%-60) /3);
+}
+.content{
+    gap: 8px;
+    align-items: center;
+    position: absolute;
+  justify-content: center;
+}
+
+.current{
+    color: var(--acent-color);}
 
   .content-btn-item {
+    padding: 6px 22px;
+    height: 38px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -434,6 +461,9 @@ color:  var(--secondary-text-color);
     color: #212121;
     border-radius: 4px;
     background-color: var(--buttons-port-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
     
 }
 
