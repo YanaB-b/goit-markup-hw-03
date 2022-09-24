@@ -176,24 +176,25 @@ color: var(--ouwer-text-color);
 .subject{
 
     background-color: var(--background-footer-color);
+    text-align: center;
+  
   
 }
 .subject-content{
+    height: 600px;
     padding: 200px 270px 266px 230px;
-height: 600px;
+  
 }
 
 
 .subject-text{
+   display: inline-block;
+   max-width: 696px;
+   max-height: 120px;
+   margin-top: 0;
+   margin-bottom: 16px;
+   
 
-     position: absolute;
-    max-width: 696px;
-    margin-top: 0px;
-    margin-bottom: 16px;
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #000000;
-    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -207,20 +208,20 @@ height: 600px;
     color: #2196f3;
 }
 
+
 .subject-btn{
    
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     border-radius: 4px;
-    position: absolute;
-    padding: 10px 32px; 
+    padding: 10px 32px;
     min-width: 216px;
-    min-height: 50px;
-    left: 683px;
-    top: 433px;
+    height: 50px;
     text-align: center;
     margin-top: 0px;
     align-items: center;
+
+    
+    
 
 font-family: 'Roboto';
 font-weight: 700;
@@ -317,15 +318,14 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 }
 .img-teem{
     margin-top: 0px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     
 
 }
 
 .teem-subtitle{
     margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     
     text-align: center;
     font-weight: 500;
@@ -339,8 +339,8 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 .teem-subtitle-text{
     
     margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+   
  
     text-align: center;
     font-size: 16px;
@@ -377,8 +377,9 @@ color:var(--secondary-text-color) ;
 }
 
 
-.footer-link-tel,
-.footer-link-mail{
+
+.footer-link-mail,
+.footer-link-tel{
     
     display: inline-block;
     margin-top: 0;
@@ -391,6 +392,9 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+}
+.footer-link-tel:last-child{
+    margin-bottom: 0;
 }
 
 .footer-list :focus,
@@ -425,8 +429,13 @@ color:  var(--secondary-text-color);
   }
 
 .portfolio{
+    display: inline-flex;
+    align-items: center;
+    
     padding-top: 94px;
     padding-bottom: 50px;
+    padding-left: 297px;
+    
 
 }
 .portfolio-img{
@@ -447,7 +456,7 @@ color:  var(--secondary-text-color);
     gap: 8px;
     align-items: center;
     position: absolute;
-  justify-content: center;
+  
 }
 
 .current{
@@ -491,8 +500,8 @@ height: 404px;
 }
 .icon-text{
 margin-top: 0;
-margin-bottom: 0;
-padding-bottom: 4px;
+margin-bottom: 4px;
+
 
 font-weight: 700;
 font-size: 18px;
