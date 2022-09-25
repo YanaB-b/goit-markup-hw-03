@@ -124,7 +124,13 @@ l   letter-spacing: 0.03em;
    .header-item:last-child{
     margin-right: 0;
    }
-
+.conteiner-list{
+    margin-right: 50px;
+}
+.conteiner-list :last-child{
+        margin-right: 0;
+       
+}
 .header-list :hover,
 .header-list :focus{
      color: var(--acent-color);
