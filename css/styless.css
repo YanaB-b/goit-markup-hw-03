@@ -107,6 +107,7 @@ html{
    letter-spacing: 0.03em;
    color: var(--acent-color);
    }
+
    .header-logo-color{
     font-family: 'Raleway';
     font-style: normal;
@@ -151,6 +152,7 @@ l   letter-spacing: 0.03em;
 .header-link{
     padding: 33px 0;
     display: block;
+
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -164,8 +166,6 @@ color: var(--main-text-color);
 }
 
 .header-mail{
-    
-    
    padding: 32px 0;
 
 font-weight: 500;
@@ -176,8 +176,6 @@ color: var(--ouwer-text-color);
 
 }
 .header-tel{
-    
-     
    padding: 32px 0;
 
 font-weight: 500;
@@ -223,16 +221,9 @@ color: var(--ouwer-text-color);
   
 }
 
-.subject-content{
-   
-  
-}
-.
-
 .subject-text{
    
    max-width: 696px;
-   
    margin:0 auto;
    margin-bottom: 30px;
    
@@ -257,13 +248,10 @@ color: var(--ouwer-text-color);
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 216px;
-   
     text-align: center;
     margin-top: 0px;
     align-items: center;
-border: none;
-    
-    
+    border: none;  
 
 font-family: 'Roboto';
 font-weight: 700;
@@ -325,8 +313,6 @@ color: var(--ouwer-text-color);
 .img-conteiner{
     display: flex;
     gap: 30px;
-    
-    
 }
 
 .teem-desk{
@@ -349,10 +335,7 @@ color: var(--main-text-color);
     margin-bottom: 50px;
 }
 .list-teem{
-
-
 width: 270px;
-
 background-color: var(--background-color);
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -413,15 +396,11 @@ color:var(--secondary-text-color) ;
 
 }
 
-
-
 .footer-link-mail,
 .footer-link-tel{
     
     display: inline-block;
     margin-top: 0;
-    margin-bottom: 9px;
-   
     
 
     font-style: normal;
@@ -430,9 +409,7 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
-.footer-link-tel:last-child{
-    margin-bottom: 0;
-}
+
 
 .footer-list :focus,
 .footer-list :hover{
@@ -440,19 +417,17 @@ color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
     
 }
-.foter-list{
+.footer-list:not(:last-child){
+    
     margin-bottom: 9px;
 
 }
-.footer-list :last-child{
-margin-bottom: 0;
-}
+
+
 .footer-link-addres{
     display: inline-block;
     margin-top: 0px;
     
-
-
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
@@ -470,39 +445,31 @@ color:  var(--secondary-text-color);
    cursor: pointer;
   }
 
-.portfolio{
-    display: inline-flex;
-    align-items: center;
-    
-    padding-top: 94px;
-    padding-bottom: 50px;
-    padding-left: 297px;
-    
-
+.header{
+    border-bottom: 1px solid var(--line-color);
 }
+
+.portfolio-section{ 
+    padding: 94px 0;
+}
+
 .portfolio-img{
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    
     flex-wrap: wrap;
     gap: 30px;
-    padding-bottom: 94px;
     
-}
-   
-
-
-.icon{
-    width: calc((100%-60px) /3);
 }
 .content{
     gap: 8px;
     align-items: center;
-    position: absolute;
-  
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .current{
-    color: var(--acent-color);}
+    color: var(--acent-color);
+}
 
   .content-btn-item {
     padding: 6px 22px;
@@ -518,27 +485,22 @@ color:  var(--secondary-text-color);
     border-radius: 4px;
     background-color: var(--buttons-port-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-
-    
 }
 
 
 .icon {
     display: inline-block;
-    list-style: none;
     text-decoration: none;
-    box-sizing: border-box;
-    border: 1px solid #EEEEEE;
-   
-width: 370px;
-height: 404px;
+    width: 370px;
+
 
 }
 
 
 .project-icon{
     padding: 20px 24px;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
 }
 .icon-text{
 margin-top: 0;
