@@ -149,6 +149,7 @@ l   letter-spacing: 0.03em;
         margin-right: 0;
 }
 
+
 .header-link{
     padding: 33px 0;
     display: block;
@@ -167,14 +168,26 @@ color: var(--main-text-color);
 
 .header-mail{
    padding: 32px 0;
-
+display: inline-block;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--ouwer-text-color);
 
+
 }
+
+.header-mail::before {
+    content: ;
+    width: 16px;
+    height: 12px;
+
+    background-image: url(../images/envelope.svg);
+    display: inline-block;
+    background-size: contain;
+}
+
 .header-tel{
    padding: 32px 0;
 
@@ -276,6 +289,15 @@ cursor: pointer;
 .advantage{
     max-width: 270px;
     max-height: 98px;
+}
+.advantage ::before{
+    display: inline-block;
+    content: ;
+    width: 12px;
+    height: 12px;
+    background-color: #2196F3;
+
+
 }
 .teem-top{
     margin-bottom: 10px;
